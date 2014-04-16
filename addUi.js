@@ -5,7 +5,7 @@
                 var title = $(this).parent('a').attr('title')
                 ,	hoverTitle;
 
-                console.log('title' + title);
+//                console.log('title' + title);
 
                 switch (title) {
                     case "PRINCE TOP" :
@@ -37,7 +37,7 @@
                         break;
                 }
 
-                console.log('hoverTitle' + hoverTitle);
+//                console.log('hoverTitle' + hoverTitle);
 
                 $(this).text(hoverTitle);
             },
