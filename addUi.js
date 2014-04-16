@@ -1,46 +1,46 @@
-        (function($) {
-        	$( document ).ready(function() {
-            	$('.leftbrand').hover(
-            		function() {
-            			var title = $(this).parent('a').attr('title')
-            			,	hoverTitle;
-        
-                        console.log('title' + title);
-        
-            			switch (title) {
-            				case "PRINCE TOP" :
-            					hoverTitle = "ë‚¨ì ìƒì˜";
-            					break;
-            				case "PRINCE BOTTOM" :
-            					hoverTitle = "ë‚¨ì í•˜ì˜";
-            					break;
-            				case "PRINCESS TOP" :
-            					hoverTitle = "ì—¬ì ìƒì˜";
-            					break;
-            				case "PRINCESS BOTTOM" :
-            					hoverTitle = "ì—¬ì í•˜ì˜";
-            					break;
-            				case "PRINCESS OPS" :
-            					hoverTitle = "ì—¬ì ì›í”¼ìŠ¤";
-            					break;
-            				case "SET" :
-            					hoverTitle = "ìƒí•˜ì˜";
-            					break;
-            				case "CAP" :
-            					hoverTitle = "ëª¨ì";
-            					break;
-            				case "SHOES" :
-            					hoverTitle = "ì‹ ë°œ";
-            					break;
-            			}
-        
-                        console.log('hoverTitle' + hoverTitle);
-        
-            			$(this).text(hoverTitle);
-            		},
-            		function() {
-            			$(this).text($(this).parent('a').attr('title'));
-            		}
-            	);
-        	});	
-        }(jQuery));
+(function($) {
+    $( document ).ready(function() {
+        $('.leftbrand').hover(
+            function() {
+                var title = $(this).parent('a').attr('title')
+                ,	hoverTitle;
+
+                console.log('title' + title);
+
+                switch (title) {
+                    case "PRINCE TOP" :
+                        hoverTitle = "³²ÀÚ »óÀÇ";
+                        break;
+                    case "PRINCE BOTTOM" :
+                        hoverTitle = "³²ÀÚ ÇÏÀÇ";
+                        break;
+                    case "PRINCESS TOP" :
+                        hoverTitle = "¿©ÀÚ »óÀÇ";
+                        break;
+                    case "PRINCESS BOTTOM" :
+                        hoverTitle = "¿©ÀÚ ÇÏÀÇ";
+                        break;
+                    case "PRINCESS OPS" :
+                        hoverTitle = "¿©ÀÚ ¿øÇÇ½º";
+                        break;
+                    case "SET" :
+                        hoverTitle = "»óÇÏÀÇ";
+                        break;
+                    case "CAP" :
+                        hoverTitle = "¸ğÀÚ";
+                        break;
+                    case "SHOES" :
+                        hoverTitle = "½Å¹ß";
+                        break;
+                }
+
+                console.log('hoverTitle' + hoverTitle);
+
+                $(this).text(hoverTitle);
+            },
+            function() {
+                $(this).text($(this).parent('a').attr('title'));
+            }
+        );
+    });	
+}(jQuery));
