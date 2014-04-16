@@ -32,6 +32,9 @@
                     case "SHOES" :
                         hoverTitle = "신발";
                         break;
+                    case "ACC" :
+                        hoverTitle = "악세사리";
+                        break;
                 }
 
                 console.log('hoverTitle' + hoverTitle);
