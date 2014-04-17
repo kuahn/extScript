@@ -39,6 +39,8 @@
             $(this).parent('a').attr('title', changeTitle);
         });
 
+        $('#MAKESHOPLY0').find('td').removeAttr('bgcolor');
+
         // 메뉴 롤오버
 //        $('.leftbrand').hover(
 //            function() {
