@@ -39,7 +39,10 @@
             $(this).parent('a').attr('title', changeTitle);
         });
 
+        // 사이드 배너 보더와 하단 닫기 버튼 오류 수정.
         $('#MAKESHOPLY0').find('td').removeAttr('bgcolor');
+        $('form[name="form1"]').find('br').remove();
+        $('form[name="form1"]').find('div').css('display','inline');
 
         // 메뉴 롤오버
 //        $('.leftbrand').hover(
